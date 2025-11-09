@@ -41,7 +41,7 @@ header h1 {
   margin-left: 100px;
 }
 
-/* Nav styling */
+
 nav ul {
   list-style: none;
   display: flex;
@@ -72,14 +72,14 @@ nav ul li a {
   margin-left: auto;
   margin-right: auto;}
 
-/* ====== Responsive Nav (Mobile) ====== */
+
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
 
-    /* ====== Search & Filter Section ====== */
+    
     .controls {
   display: flex;
   justify-content:space-evenly;
@@ -109,7 +109,6 @@ nav ul li a {
       background: #B88E2F;
     }
 
-    /* ====== Menu Grid ====== */
     .menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,7 +155,7 @@ nav ul li a {
       color: #333;
     }
 
-    /* ====== Footer ====== */
+    
     footer {
       background:goldenrod;
       color: whitesmoke;
@@ -175,13 +174,13 @@ nav ul li a {
     
     @media (max-width: 600px) {
      header {
-    flex-direction: column;   /* sab vertically stack honge */
+    flex-direction: column;   
     text-align: center;
   }
 
   .logo {
     display: block;
-    margin: 0 auto;  /* logo center me aa jayega */
+    margin: 0 auto;  
     height: 190px;
   }
 
@@ -197,7 +196,7 @@ nav ul li a {
 
   .menu-toggle {
     display: block;
-    margin: 12px auto; /* hamburger bhi center me */
+    margin: 12px auto; 
   }
 
   nav ul {
@@ -392,7 +391,7 @@ nav ul li a {
  
   </section>
 
-  <!-- ====== FOOTER ====== -->
+
   <footer>
     <p> Address: Hydrabad Latif abad road | 📞 Phone: 123-456-789 | ✉ Email: classicbite@restaurant.com</p>
     <p>
@@ -403,16 +402,16 @@ nav ul li a {
     </p>
   </footer>
 
-  <!-- ====== JavaScript ====== -->
+  
   <script>
-    // ====== Mobile Navbar Toggle ======
+    
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav ul');
     toggle.addEventListener('click', () => {
       nav.classList.toggle('show');
     });
 
-    // ====== Filter Menu Items by Category ======
+    
     function filterMenu(category) {
       const items = document.querySelectorAll('.card');
       items.forEach(item => {
@@ -424,7 +423,7 @@ nav ul li a {
       });
     }
 
-    // ====== Search Functionality ======
+    
     const searchInput = document.getElementById('search');
     searchInput.addEventListener('keyup', () => {
       const searchText = searchInput.value.toLowerCase();
